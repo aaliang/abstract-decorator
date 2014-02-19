@@ -1,10 +1,10 @@
 Abstract class implementing the default behavior for decorators.
 It keeps a reference to the function it is provided at initialization (the decorated function).
 Automatically handles decoration of a static method versus a instance method.
-When overriding the L{AbstractDecorator.__call__} method, make sure to always call it.
+When overriding the ```L{AbstractDecorator.__call__}``` method, make sure to always call it.
 
 ex usage:
-
+```python
 from abstract_decorator import AbstractDecorator
 
 class MyDecorator(AbstractDecorator):
@@ -36,4 +36,5 @@ class myClass(object):
 
     @MyDecorator
     def myInstance(self):
-        print self.hello\
+        print self.hello
+```
